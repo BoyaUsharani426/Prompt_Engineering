@@ -12,7 +12,7 @@ client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
 
 def retriever_info(query):
     # Dummy implementation for example purposes
-    return "about prime minister of india"
+    return 
 
 def rag_query(query):
     retrieved_info = retriever_info(query)
@@ -42,4 +42,5 @@ if st.button("Submit"):
             st.write(response)
     else:
         st.warning("Please enter a query.")
+
 
